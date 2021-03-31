@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-estetica">
+        <div class="imagen"></div>
+        <div class="app">
+            <header class="header">
+                <h1>App Peluquería</h1>
+                <nav class="navegacion">
+                    <button type="button" data-paso="1">Servicios</button>
+                    <button type="button" data-paso="2">Resumen</button>
+                    <button type="button" data-paso="3">Información Cliente</button>
+                </nav>
+            </header>
+            <div id="paso-1" class="seccion">
+                <h2>Servicios</h2>
+                <p class="text-center">Elige tus Servicios a Continuación</p>
+                <div class="listado-servicios"></div>
+            </div>
+            <div id="paso-2" class="seccion contenido-resumen">    
+                <h2>Resumen</h2>
+            </div>
+            <div id="paso-3" class="seccion">
+                <h2>Tus Datos y Cita</h2>
+                <p class="text-center">Coloca tus datos y Fecha de tu Cita</p>
+                <form class="formulario">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Tu Nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="fecha">Fecha:</label>
+                        <input id="fecha" type="date">
+                    </div>
+                    <div class="campo">
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora">
+                    </div>  
+                </form>
+            </div>
+            <div class="paginacion">
+                <button type="button" id="anterior">
+                    &laquo; Anterior 
+                </button >
+
+                <button type="button" id="siguiente">
+                    Siguiente &raquo; <!--entidad para mostrar flecha-->
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/build/js/bundle.js"></script>
+</body>
+</html>
